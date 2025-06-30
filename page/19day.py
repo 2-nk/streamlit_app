@@ -1,23 +1,23 @@
 import streamlit as st
 
-st.title('How to layout your Streamlit app')
+st.title("How to layout your Streamlit app")
 
-with st.expander('About this app'):
-    st.write('This app shows the various ways on how you can layout your Streamlit app.')
-    st.image('https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png')
+with st.expander("About this app"):
+    st.write("This app shows the various ways on how you can layout your Streamlit app.")
+    st.image("https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png")
 
-st.sidebar.header('Input')
-user_name = st.sidebar.text_input('What is your name?')
-user_emoji = st.sidebar.selectbox('Choose an emoji', ['', '😄', '😆', '😊', '😍', '😴', '😕', '😱'])
-user_food = st.sidebar.selectbox('What is your favorite food?', ['', 'Tom Yum Kung', 'Burrito', 'Lasagna', 'Hamburger', 'Pizza'])
+st.sidebar.header("Input")
+user_name = st.sidebar.text_input("What is your name?")
+user_emoji = st.sidebar.selectbox("Choose an emoji", ['', '😄', '😆', '😊', '😍', '😴', '😕', '😱'])
+user_food = st.sidebar.selectbox("What is your favorite food?", ['', 'Tom Yum Kung', 'Burrito', 'Lasagna', 'Hamburger', 'Pizza'])
 
-st.header('Output')
+st.header("Output")
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 =st.columns(3)
 
 with col1:
     if user_name != '':
-        st.write(f'👋 Hello {user_name}!')
+        st.write(f'👋 Hello {ser_name}!')
     else:
         st.write('👈 Please enter your name!')
 
@@ -29,6 +29,6 @@ with col2:
 
 with col3:
     if user_food != '':
-        st.write(f'🍴 {user_food} is your favorite food!')
+        st.write(f'🍴{user_food} is your favorite food!')
     else:
         st.write('👈 Please choose your favorite food!')
